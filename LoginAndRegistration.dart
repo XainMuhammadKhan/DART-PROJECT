@@ -56,6 +56,7 @@ class registrationAndAuthentication {
         }
       }
     }
+    
 
     if (!emailMatch && !passwordMatch) {
       print("User doesn't exist. Please sign up.");

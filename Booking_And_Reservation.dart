@@ -62,7 +62,7 @@ class flightBooking{
       print("Your Ticket Details are \n $TicketDetails");
     }
     else if(paymentMethod=="Dc"){
-      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Umrah Flight with us!Enjoy your journey and do remember us in your Prayers! Don't forget to bring Ajwa dates and Zamzam water for us too!");
+      print("Payment of $Total PKR done by Debit Card! Thank you $yourName $CNIC for booking Umrah Flight with us!Enjoy your journey and do remember us in your Prayers! Don't forget to bring Ajwa dates and Zamzam water for us too!");
        print("Your Ticket Details are \n $TicketDetails");
     }
   }
@@ -82,12 +82,13 @@ class flightBooking{
     }
     else if (datechoice == "3") {
       TicketDetails.add({'Name' :yourName, 'CNIC' :CNIC, 'Ticket':name, 'Flight Date' :'15/08/2024'});
+    }
     this.Price = 1000000;
     print("Price is 10,00,000 PKR");
     print("Enter ok to book now");
     this.confirmation = stdin.readLineSync()!;
     if (confirmation=="ok") {
-      print("Thank you for booking Hajj Flight with us!Enjoy your journey and do remember us in your Prayers specially on Arafah day! Don't forget to bring Ajwa dates and Zamzam water for us too!");
+      print("Thank you for booking Hajj Flight with us!Enjoy your journey and do remember us in your Prayers! Don't forget to bring Ajwa dates and Zamzam water for us too!");
       print("Your Ticket Details are \n $TicketDetails");
       
       print("Would you like to buy Hajj Guide written, published and printed by union of wellknown Muftis for just 2000PKR? Enter yes or no!");
@@ -110,17 +111,16 @@ class flightBooking{
       print("Your Ticket Details are \n $TicketDetails");
     }
     else if(paymentMethod=="Dc"){
-      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Hajj Flight with us!Enjoy your journey and do remember us in your Prayers specially on Arafah day! Don't forget to bring Ajwa dates and Zamzam water for us too!");
+      print("Payment of $Total PKR done by Debit Card! Thank you $yourName $CNIC for booking Hajj Flight with us!Enjoy your journey and do remember us in your Prayers specially on Arafah day! Don't forget to bring Ajwa dates and Zamzam water for us too!");
       print("Your Ticket Details are \n $TicketDetails");
     }
   }
-}
-void TurkiyeFlightBooking(){
+  void TurkiyeFlightBooking(){
     print("Enter your Name");
     this.yourName = stdin.readLineSync()!;
     print("Enter your CNIC Number");
     this.CNIC = int.parse(stdin.readLineSync()!);
-    this.name = "Turkiye FLight Ticket";
+    this.name = "Turkiye Flight Ticket";
     print("Available dates are:\n1- 20/02/2024\n2- 05/08/2024\n3- 15/08/2024\nSelect any one option!");
     this.datechoice = stdin.readLineSync()!;
     if (datechoice == "1") {
@@ -131,6 +131,7 @@ void TurkiyeFlightBooking(){
     }
     else if (datechoice == "3") {
       TicketDetails.add({'Name' :yourName, 'CNIC' :CNIC, 'Ticket':name, 'Flight Date' :'15/08/2024'});
+    }
     this.Price = 2500000;
     print("Price is 25,00,000 PKR");
     print("Enter ok to book now");
@@ -163,8 +164,7 @@ void TurkiyeFlightBooking(){
       print("Your Ticket Details are \n $TicketDetails");
     }
   }
-}
-void USAFlightBooking(){
+  void USAFlightBooking(){
     print("Enter your Name");
     this.yourName = stdin.readLineSync()!;
     print("Enter your CNIC Number");
@@ -180,6 +180,7 @@ void USAFlightBooking(){
     }
     else if (datechoice == "3") {
       TicketDetails.add({'Name' :yourName, 'CNIC' :CNIC, 'Ticket':name, 'Flight Date' :'15/08/2024'});
+    }
     this.Price = 3500000;
     print("Price is 35,00,000 PKR");
     print("Enter ok to book now");
@@ -189,6 +190,7 @@ void USAFlightBooking(){
       print("Your Ticket Details are \n $TicketDetails");
       
       print("Would you like to buy USA Tour guide written, published and printed by union of wellknown tour guides for just 20000PKR? Enter yes or no!");
+      
       this.bookPrice = 20000;
       String bookChoice1 = stdin.readLineSync()!;
       if (bookChoice1=="yes") {
@@ -204,12 +206,12 @@ void USAFlightBooking(){
     print("How would you like to pay? Credit card or Debit card? Enter Cc for Credit card and Dc Debit card");
     this.paymentMethod = stdin.readLineSync()!;
     if (paymentMethod=="Cc") {
-      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Flight to USA with us!Enjoy your journey and Don't forget to bring Air Jordans for us too!");
+      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Umrah Flight with us!Enjoy your journey and do remember us in your Prayers! Don't forget to bring Ajwa dates and Zamzam water for us too!");
       print("Your Ticket Details are \n $TicketDetails");
     }
     else if(paymentMethod=="Dc"){
-      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Flight to USA with us!Enjoy your journey and Don't forget to bring Air Jordans for us too!");
-      print("Your Ticket Details are \n $TicketDetails");
+      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Umrah Flight with us!Enjoy your journey and do remember us in your Prayers! Don't forget to bring Ajwa dates and Zamzam water for us too!");
+       print("Your Ticket Details are \n $TicketDetails");
     }
   }
-}}
+  }

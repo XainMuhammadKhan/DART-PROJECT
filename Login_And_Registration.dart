@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'credentialsStroage.dart';
+import 'Credentials_Storage.dart';
 
 class registrationAndAuthentication {
   void SignUp() {
@@ -11,6 +11,7 @@ class registrationAndAuthentication {
     storeCredentials newUser = storeCredentials(Email, Password);
     newUser.saveCredentialsToTextFile();
     newUser.saveCredentialsToJsonFile();
+    print("User registered successfully!");
   }
 
   void login() {

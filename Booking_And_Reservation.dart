@@ -160,7 +160,7 @@ class flightBooking{
       print("Your Ticket Details are \n $TicketDetails");
     }
     else if(paymentMethod=="Dc"){
-      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Flight to Turkiye with us!Enjoy your journey and Don't forget to bring Baklava and Kunafeh for us too!");
+      print("Payment of $Total PKR done by Debit Card! Thank you $yourName $CNIC for booking Flight to Turkiye with us!Enjoy your journey and Don't forget to bring Baklava and Kunafeh for us too!");
       print("Your Ticket Details are \n $TicketDetails");
     }
   }
@@ -206,12 +206,12 @@ class flightBooking{
     print("How would you like to pay? Credit card or Debit card? Enter Cc for Credit card and Dc Debit card");
     this.paymentMethod = stdin.readLineSync()!;
     if (paymentMethod=="Cc") {
-      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Umrah Flight with us!Enjoy your journey and do remember us in your Prayers! Don't forget to bring Ajwa dates and Zamzam water for us too!");
+      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Flight to USA with us!Enjoy your journey and Don't forget to bring Air Jordans for us too!");
       print("Your Ticket Details are \n $TicketDetails");
     }
     else if(paymentMethod=="Dc"){
-      print("Payment of $Total PKR done by Credit Card! Thank you $yourName $CNIC for booking Umrah Flight with us!Enjoy your journey and do remember us in your Prayers! Don't forget to bring Ajwa dates and Zamzam water for us too!");
-       print("Your Ticket Details are \n $TicketDetails");
+      print("Payment of $Total PKR done by Debit Card! Thank you $yourName $CNIC for booking Flight to USA with us!Enjoy your journey and Don't forget to bring Air Jordans for us too!");
+      print("Your Ticket Details are \n $TicketDetails");
     }
   }
   }
